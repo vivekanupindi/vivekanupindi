@@ -56,30 +56,50 @@ Building dependable data workflows, with an interest in ETL design, integration,
 
 ## Research console
 
-A small, terminal-inspired index of what I work on. These are illustrative commands for navigating my profile—not an executable shell.
+The live portfolio has a **working command prompt** with the same commands listed below. GitHub profile READMEs do not execute custom JavaScript, so this section is a clickable command reference; use the launch link to type commands in the real console.
 
-```bash
-$ whoami
-Vivek Anupindi · Computer Science Ph.D. student · UMBC
+<p align="center">
+  <a href="https://vivekanupindi.github.io/#research-console">
+    <img src="https://img.shields.io/badge/LAUNCH-Live%20Interactive%20Console-e50914?style=for-the-badge&logo=windowsterminal&logoColor=white" alt="Launch the live interactive research console">
+  </a>
+</p>
 
-$ cat current_focus.md
-Clinical NLP
-Machine learning for healthcare
-Predictive modeling
-Reliable data systems
+### Command reference
 
-$ ls active_projects/
-clinical-nlp/       Spanish clinical text → ICD-10 coding
-health-forecasting/ Time-series prediction
-data-systems/       ETL · integration · cloud analytics
+Click any command to open the live console, then enter it and press **Enter**.
 
-$ open portfolio
-https://vivekanupindi.github.io/
+| Command | What it does |
+|---|---|
+| [`help`](https://vivekanupindi.github.io/#research-console) | Lists every available command |
+| [`whoami`](https://vivekanupindi.github.io/#research-console) | Shows my research profile |
+| [`cat current_focus.md`](https://vivekanupindi.github.io/#research-console) | Shows my current research themes |
+| [`ls active_projects/`](https://vivekanupindi.github.io/#research-console) | Lists featured project directions |
+| [`open research`](https://vivekanupindi.github.io/#research-console) | Jumps to research topics |
+| [`open publications`](https://vivekanupindi.github.io/#research-console) | Jumps to publications |
+| [`open experience`](https://vivekanupindi.github.io/#research-console) | Jumps to experience |
+| [`open about`](https://vivekanupindi.github.io/#research-console) | Jumps to the about section |
+| [`open contact`](https://vivekanupindi.github.io/#research-console) | Jumps to contact information |
+| [`open fun-corner`](https://vivekanupindi.github.io/#research-console) | Opens the Fun Corner — books and films |
+| [`clear`](https://vivekanupindi.github.io/#research-console) | Clears the console output |
 
-$ open fun-corner
-Books, films, and notes from off the clock
-https://vivekanupindi.github.io/blog.html
+```text
+vivek@research-lab: ~/portfolio
+$ help
+
+help                         List every available command
+whoami                       Show my research profile
+cat current_focus.md         Show my current research themes
+ls active_projects/          List featured project directions
+open research                Jump to Topics I'm exploring
+open publications            Jump to publications
+open experience              Jump to experience
+open about                   Jump to the about section
+open contact                 Jump to contact information
+open fun-corner              Open the Fun Corner (books and films)
+clear                        Clear the console output
 ```
+
+> The live console accepts predefined portfolio commands only; it does not execute operating-system shell commands.
 
 ## Experience
 
