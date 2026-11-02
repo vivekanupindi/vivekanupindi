@@ -12,7 +12,7 @@
 <p align="center">
   Computer Science Ph.D. student at the <strong>University of Maryland, Baltimore County (UMBC)</strong>.
   <br>
-  I work across healthcare-focused machine learning, clinical language, and the data systems that make analysis dependable.
+  I work across clinical NLP, healthcare-focused machine learning, predictive modeling, and the data systems that make analysis dependable.
 </p>
 
 <p align="center">
