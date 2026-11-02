@@ -1,18 +1,156 @@
-# 💫 About Me:
-I'M currently working on two project , a personal project dealing with health care analytics and other publication on cloud analytics<br>I'm Interested in collaboration <br>I'm Currently trying to fathom the Agent and their use cases<br>To Host , Do more commits than pulls and more creates than clones
+<!--
+  Profile README for github.com/vivekanupindi
+  Keep project descriptions current and update links when portfolio pages change.
+-->
 
+<div align="center">
+  <img src="assets/profile-banner.svg" alt="Vivek Anupindi — Building intelligent systems for human health" width="100%">
+</div>
 
-## 🌐 Socials:
-[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:vivekanupindi@gmail.com) 
+<h2 align="center">Hi, I'm Vivek Anupindi 👋</h2>
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka) ![Apache Spark](https://img.shields.io/badge/Apache%20Spark-FDEE21?style=for-the-badge&logo=apachespark&logoColor=black) ![Apache Hadoop](https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black) ![Apache Hive](https://img.shields.io/badge/Apache%20Hive-FDEE21?style=for-the-badge&logo=apachehive&logoColor=black) ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![GitLab CI](https://img.shields.io/badge/gitlab%20CI-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe Creative Cloud](https://img.shields.io/badge/Adobe%20Creative%20Cloud-DA1F26.svg?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=white) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white) ![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white) ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=vivekanupindi&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=vivekanupindi&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=vivekanupindi&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<p align="center">
+  Ph.D. student in Computer Science at the
+  <strong>University of Maryland, Baltimore County (UMBC)</strong>.
+  <br>
+  Interested in building practical, reliable AI and data systems for healthcare.
+</p>
+
+<p align="center">
+  <a href="https://vivekanupindi.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20my%20site-e50914?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio">
+  </a>
+  <a href="mailto:vivekanupindi@umbc.edu">
+    <img src="https://img.shields.io/badge/Email-Contact%20me-7d292b?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://www.linkedin.com/in/vivek-anupindi-6214831a0/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-333333?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/vivekanupindi">
+    <img src="https://img.shields.io/badge/GitHub-Projects-333333?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=vivekanupindi&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## Research interests
+
+My interests are at the intersection of **clinical natural language processing, machine learning for healthcare, predictive modeling, and dependable data systems**. I am especially interested in how well-engineered data and intelligent models can support meaningful, human-centered decisions.
+
+| Clinical NLP | Healthcare AI | Data systems |
+|:--:|:--:|:--:|
+| Clinical text understanding, medical coding, multi-label classification | Predictive modeling, time-series analysis, decision support | Data engineering, ETL, integration, cloud analytics, data quality |
+
+## Selected research directions
+
+### Automated ICD-10 coding from Spanish clinical text
+Exploring multi-label diagnostic-code classification for Spanish clinical narratives, including comparisons across traditional machine-learning approaches, neural models, and multilingual transformers.
+
+### Glucose time-series prediction
+An exploratory healthcare-AI project focused on temporal forecasting and the use of contextual signals in predictive modeling.
+
+### Cloud-native analytics and data engineering
+Building dependable data workflows, with an interest in ETL design, integration, data validation, and analytics-ready pipelines.
+
+> These are research and project directions; descriptions are not claims of clinical deployment or validated medical performance.
+
+## Research console
+
+A small, terminal-inspired index of what I work on. These are illustrative commands for navigating my profile—not an executable shell.
+
+```bash
+$ whoami
+Vivek Anupindi · Computer Science Ph.D. student · UMBC
+
+$ cat current_focus.md
+Clinical NLP
+Machine learning for healthcare
+Predictive modeling
+Reliable data systems
+
+$ ls active_projects/
+clinical-nlp/       Spanish clinical text → ICD-10 coding
+health-forecasting/ Time-series prediction
+data-systems/       ETL · integration · cloud analytics
+
+$ open portfolio
+https://vivekanupindi.github.io/
+
+$ open fun-corner
+Books, films, and notes from off the clock
+https://vivekanupindi.github.io/blog.html
+```
+
+## Experience
+
+**Graduate Global Student — Saint Louis University Information Technology Services (SLU ITS)**  
+*August 2023 – May 2025*
+
+- Worked on IT projects involving identity and access management (IAM) and iPass-related integrations.
+- Collaborated with advisor Mike Martin on project work and integration activities.
+
+## Education
+
+| Degree | Institution |
+|---|---|
+| **Ph.D., Computer Science** · Fall 2026 | University of Maryland, Baltimore County (UMBC) |
+| **M.S., Information Systems** · GPA: 4.0/4.0 | Saint Louis University |
+| **B.Tech, Computer Science** · GPA: 9.0/10.0 | B. V. Raju Institute of Technology, Hyderabad |
+
+## Tools & technologies
+
+<p>
+  <strong>Programming & data:</strong><br>
+  <img src="https://img.shields.io/badge/Python-2b2928?style=flat-square&logo=python&logoColor=f2c879" alt="Python">
+  <img src="https://img.shields.io/badge/SQL-2b2928?style=flat-square&logo=postgresql&logoColor=e5b68b" alt="SQL">
+  <img src="https://img.shields.io/badge/Pandas-2b2928?style=flat-square&logo=pandas&logoColor=e5b68b" alt="Pandas">
+  <img src="https://img.shields.io/badge/NumPy-2b2928?style=flat-square&logo=numpy&logoColor=e5b68b" alt="NumPy">
+  <br>
+  <strong>AI, ML & analytics:</strong><br>
+  <img src="https://img.shields.io/badge/TensorFlow-2b2928?style=flat-square&logo=tensorflow&logoColor=e5b68b" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/MLflow-2b2928?style=flat-square&logo=mlflow&logoColor=e5b68b" alt="MLflow">
+  <img src="https://img.shields.io/badge/Power%20BI-2b2928?style=flat-square&logo=powerbi&logoColor=e5b68b" alt="Power BI">
+  <img src="https://img.shields.io/badge/Databricks-2b2928?style=flat-square&logo=databricks&logoColor=ff7770" alt="Databricks">
+  <br>
+  <strong>Data platforms & cloud:</strong><br>
+  <img src="https://img.shields.io/badge/Apache%20Spark-2b2928?style=flat-square&logo=apachespark&logoColor=e5b68b" alt="Apache Spark">
+  <img src="https://img.shields.io/badge/Apache%20Airflow-2b2928?style=flat-square&logo=apacheairflow&logoColor=e5b68b" alt="Apache Airflow">
+  <img src="https://img.shields.io/badge/AWS-2b2928?style=flat-square&logo=amazonaws&logoColor=e5b68b" alt="AWS">
+  <img src="https://img.shields.io/badge/Azure-2b2928?style=flat-square&logo=microsoftazure&logoColor=e5b68b" alt="Azure">
+  <img src="https://img.shields.io/badge/Google%20Cloud-2b2928?style=flat-square&logo=googlecloud&logoColor=e5b68b" alt="Google Cloud">
+  <br>
+  <strong>Development & delivery:</strong><br>
+  <img src="https://img.shields.io/badge/Git-2b2928?style=flat-square&logo=git&logoColor=e5b68b" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2b2928?style=flat-square&logo=githubactions&logoColor=e5b68b" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Postman-2b2928?style=flat-square&logo=postman&logoColor=e5b68b" alt="Postman">
+  <img src="https://img.shields.io/badge/Terraform-2b2928?style=flat-square&logo=terraform&logoColor=e5b68b" alt="Terraform">
+</p>
+
+## Beyond research · Fun Corner
+
+Outside my research and technical work, I keep a little space for stories, books, films, and things that spark curiosity.
+
+<p>
+  <a href="https://vivekanupindi.github.io/blog.html">
+    <img src="https://img.shields.io/badge/Fun%20Corner-Books%20%26%20Films-e50914?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Fun Corner — Books and Films">
+  </a>
+</p>
+
+Browse the [Fun Corner](https://vivekanupindi.github.io/blog.html) on my portfolio.
+
+## GitHub activity
+
+<p>
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=vivekanupindi&show_icons=true&hide_border=true&theme=transparent&title_color=e5b68b&icon_color=e50914&text_color=c9bfbb" alt="GitHub contribution statistics">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vivekanupindi&layout=compact&hide_border=true&theme=transparent&title_color=e5b68b&text_color=c9bfbb" alt="Most used programming languages">
+</p>
+
+---
+
+<p align="center">
+  <strong>Curiosity-led research. Dependable systems. Human-centered outcomes.</strong>
+  <br>
+  <a href="https://vivekanupindi.github.io/">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/vivek-anupindi-6214831a0/">LinkedIn</a> ·
+  <a href="mailto:vivekanupindi@umbc.edu">Email</a>
+</p>
