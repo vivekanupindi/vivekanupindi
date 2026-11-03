@@ -138,34 +138,6 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
   </a>
 </p>
 
-## GitHub activity
-
-<p align="center">
-  <img src="assets/github-contributions.svg" alt="GitHub contribution calendar for the last 365 days with totals for commits, issues, pull requests, and reviews" width="100%">
-</p>
-
-<p align="center">
-  <img src="assets/github-public-stats.svg" alt="Public GitHub repository, star, fork, and follower totals" width="100%">
-</p>
-
-<p align="center">
-  <img src="assets/github-language-breakdown.svg" alt="Programming language breakdown across public, non-fork repositories" width="100%">
-</p>
-
-The contribution card shows a GitHub-style weekly calendar for the trailing 365 days, a total, and an activity breakdown. The other cards show public repository metrics and the language mix. GitHub Actions refreshes the cards daily and supports manual runs from **Actions → Refresh profile statistics → Run workflow**.
-
-By default, the workflow uses the repository's `GITHUB_TOKEN`, so the contribution calendar reflects public activity only. It does not estimate streaks, commits outside GitHub's contribution data, or coding time.
-
-### Optional private and internal contribution counts
-
-To request the same anonymized private and internal contribution counts that GitHub can show on your profile:
-
-1. Create a classic personal access token with only the `read:user` scope and an expiration date. Do not add repository access.
-2. In the repository, open **Settings → Secrets and variables → Actions**, then add a repository secret named `PROFILE_STATS_TOKEN`.
-3. On your GitHub profile, open **Contribution settings** and enable **Private contributions** if you want those counts shown.
-
-The workflow uses `PROFILE_STATS_TOKEN` only for the read-only GraphQL contribution query. The repository-scoped `GITHUB_TOKEN` continues to write the generated cards. GitHub anonymizes private contribution details; this card never lists private repository names or contents. If the optional secret is absent, it clearly labels the card as public contributions only.
-
 ---
 
 <p align="center">
