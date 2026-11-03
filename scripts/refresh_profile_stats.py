@@ -157,13 +157,15 @@ def build_contributions_svg(data, refreshed, private_token_configured=False):
     previous_month = None
     for col, week in enumerate(weeks):
         days = week.get("contributionDays", [])
-        for row, day in enumerate(days[:7]):
-            date = day["date"]
-            month_key = date[:7]
+        if days:
+            week_start = days[0]["date"]
+            month_key = week_start[:7]
             if month_key != previous_month:
-                month_name = datetime.strptime(date, "%Y-%m-%d").strftime("%b")
+                month_name = datetime.strptime(week_start, "%Y-%m-%d").strftime("%b")
                 month_labels.append(f'<text x="{x0+col*step}" y="107" fill="{MUTED}" font-family="Arial,sans-serif" font-size="10">{month_name}</text>')
                 previous_month = month_key
+        for row, day in enumerate(days[:7]):
+            date = day["date"]
             count = int(day.get("contributionCount", 0))
             level = day.get("contributionLevel", "NONE")
             color = LEVEL_COLORS.get(level, LEVEL_COLORS["NONE"])
@@ -206,4 +208,5 @@ if __name__ == "__main__":
     except Exception as error:
         print(f"Profile statistics refresh failed: {error}", file=sys.stderr)
         sys.exit(1)
+
 
