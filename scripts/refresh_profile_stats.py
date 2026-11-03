@@ -139,7 +139,7 @@ def current_streak(counts: dict[date, int], today: date, start_date: date) -> st
         cursor -= timedelta(days=1)
 
     # Mark a streak that reaches beyond the queried range as a lower bound.
-    if streak and cursor < start_date and counts.get(cursor, 0) > 0:
+    if streak and cursor < min(counts):
         return f"{streak}+"
     return str(streak)
 
