@@ -131,7 +131,7 @@ def fetch_public_contribution_days(now: datetime) -> dict[date, int]:
     return counts
 
 
-def current_streak(counts: dict[date, int], today: date, start_date: date) -> str:
+def current_streak(counts: dict[date, int], today: date) -> str:
     cursor = today if counts.get(today, 0) > 0 else today - timedelta(days=1)
     streak = 0
     while counts.get(cursor, 0) > 0:
@@ -209,7 +209,7 @@ def main() -> None:
     repositories = fetch_public_repositories()
     languages = fetch_language_totals(repositories)
     contribution_days = fetch_public_contribution_days(now)
-    streak = current_streak(contribution_days, now.date(), (now - timedelta(days=730)).date())
+    streak = current_streak(contribution_days, now.date())
     refreshed = now.strftime("%d %b %Y · %H:%M UTC")
 
     # All API calls finish before the card is written, preserving the previous file on failure.
