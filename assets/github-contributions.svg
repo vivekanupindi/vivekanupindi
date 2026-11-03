@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="392" viewBox="0 0 960 392" role="img" aria-labelledby="title desc">
+  <title id="title">Vivek Anupindi — GitHub contribution activity</title>
+  <desc id="desc">The contribution calendar will be generated from GitHub data after the first successful workflow refresh. No contribution counts are estimated.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#211818"/><stop offset="1" stop-color="#111112"/></linearGradient>
+  </defs>
+  <rect width="960" height="392" rx="18" fill="url(#background)"/>
+  <rect x=".5" y=".5" width="959" height="391" rx="17.5" fill="none" stroke="#573333"/>
+  <text x="28" y="42" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="19" font-weight="700">Contribution activity</text>
+  <text x="28" y="65" fill="#b7a7a1" font-family="Arial,sans-serif" font-size="11">The first GitHub contribution snapshot will appear after a successful refresh.</text>
+  <rect x="28" y="91" width="904" height="124" rx="12" fill="#251c1c" stroke="#573333"/>
+  <text x="52" y="146" fill="#e5b68b" font-family="Arial,sans-serif" font-size="14" font-weight="700">AWAITING LIVE DATA</text>
+  <text x="52" y="174" fill="#b7a7a1" font-family="Arial,sans-serif" font-size="12">No totals, activity levels, or streaks are shown until GitHub returns verified data.</text>
+  <text x="28" y="266" fill="#b7a7a1" font-family="Arial,sans-serif" font-size="10">The daily workflow refreshes this card automatically.</text>
+</svg>
