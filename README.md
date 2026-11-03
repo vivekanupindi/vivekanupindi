@@ -140,10 +140,17 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 
 ## GitHub activity
 
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=vivekanupindi&show_icons=true&hide_border=true&theme=transparent&title_color=e5b68b&icon_color=e50914&text_color=c9bfbb" alt="GitHub contribution statistics">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vivekanupindi&layout=compact&hide_border=true&theme=transparent&title_color=e5b68b&text_color=c9bfbb" alt="Most used programming languages">
+<p align="center">
+  <img src="assets/github-public-stats.svg" alt="Public GitHub profile statistics for Vivek Anupindi" width="100%">
 </p>
+
+<p align="center">
+  <img src="assets/github-language-breakdown.svg" alt="Programming language breakdown across public, non-fork repositories" width="100%">
+</p>
+
+These cards are generated inside this repository from GitHub's public API—no external stats-card service is needed. GitHub Actions refreshes them daily and also runs after the workflow is first merged. To refresh manually, open **Actions → Refresh profile statistics → Run workflow**.
+
+The snapshot covers public repositories, stars, forks, followers, and language byte counts. It does not claim to show private contributions, total commits, or coding time.
 
 ---
 
