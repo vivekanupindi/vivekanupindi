@@ -138,6 +138,14 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
   </a>
 </p>
 
+## GitHub snapshot
+
+<p align="center">
+  <img src="assets/github-profile-stats.svg" alt="Public GitHub contribution streak and programming language breakdown" width="100%">
+</p>
+
+This card shows a current streak based on consecutive UTC days with at least one publicly visible contribution, plus the language mix across public, non-fork, non-archived repositories. It refreshes daily through GitHub Actions. The card does not include private contributions or claim coding time.
+
 ---
 
 <p align="center">
