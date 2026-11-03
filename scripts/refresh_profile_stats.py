@@ -86,7 +86,8 @@ def fetch_language_totals(repositories: list[dict]) -> dict[str, int]:
 
 
 def fetch_public_contribution_days(now: datetime) -> dict[date, int]:
-    start = now - timedelta(days=730)
+    # GitHub limits contributionsCollection queries to a one-year period.
+    start = now - timedelta(days=365)
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
