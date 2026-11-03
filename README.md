@@ -144,7 +144,7 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
   <img src="assets/github-profile-stats.svg" alt="Public GitHub contribution streak and programming language breakdown" width="100%">
 </p>
 
-This card shows a current streak based on consecutive UTC days with at least one publicly visible contribution, plus the language mix across public, non-fork, non-archived repositories. It refreshes daily through GitHub Actions. The card does not include private contributions or claim coding time.
+
 
 ---
 
@@ -153,5 +153,5 @@ This card shows a current streak based on consecutive UTC days with at least one
   <br>
   <a href="https://vivekanupindi.github.io/">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/vivek-anupindi-6214831a0/">LinkedIn</a> ·
-  <a href="mailto:vivekanupindi@umbc.edu">Email</a>
+  <a href="mailto:vivekanupindi@gmail.com">Email</a>
 </p>
