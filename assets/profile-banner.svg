@@ -20,13 +20,17 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="330" rx="22" fill="url(#bg)"/>
-  <rect width="1200" height="330" rx="22" fill="url(#glow)"/>
+  <rect width="1200" height="330" rx="22" fill="url(#glow)">
+    <animate attributeName="opacity" values=".62;.95;.62" dur="7s" repeatCount="indefinite"/>
+  </rect>
   <rect width="1200" height="330" rx="22" fill="url(#grid)"/>
   <rect x="48" y="48" width="6" height="234" rx="3" fill="#e50914"/>
   <text x="82" y="105" fill="#e8aaa0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="4">VIVEK ANUPINDI  /  RESEARCH PROFILE</text>
   <text x="80" y="177" fill="#f4ece7" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-1">Building intelligent systems</text>
   <text x="80" y="235" fill="#ff7770" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-1">for human health.</text>
-  <path d="M82 263H690" stroke="url(#rule)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M82 263H690" stroke="url(#rule)" stroke-width="3" stroke-linecap="round" stroke-dasharray="608" stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" from="608" to="0" dur="1.4s" fill="freeze"/>
+  </path>
   <text x="82" y="300" fill="#c4b8b3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="2">COMPUTER SCIENCE  ·  UMBC  ·  CLINICAL NLP  ·  HEALTHCARE AI</text>
   <g transform="translate(865 71)">
     <rect width="285" height="190" rx="14" fill="#0d0c0d" fill-opacity=".72" stroke="#78403d" stroke-opacity=".85"/>
