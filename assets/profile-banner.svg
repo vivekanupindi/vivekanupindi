@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
   <title id="title">Vivek Anupindi — Computer Science Ph.D. Student</title>
-  <desc id="desc">A dark research-console inspired banner with warm ivory text and red accents.</desc>
+  <desc id="desc">A polished research-console banner about building thoughtful AI and dependable data systems for human health.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#171414"/>
-      <stop offset="0.58" stop-color="#211617"/>
+      <stop offset=".58" stop-color="#211617"/>
       <stop offset="1" stop-color="#111112"/>
     </linearGradient>
-    <radialGradient id="glow" cx="85%" cy="15%" r="70%">
-      <stop offset="0" stop-color="#e50914" stop-opacity=".28"/>
+    <radialGradient id="glow" cx="86%" cy="14%" r="72%">
+      <stop offset="0" stop-color="#e50914" stop-opacity=".30"/>
       <stop offset="1" stop-color="#e50914" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
@@ -20,20 +20,16 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="330" rx="22" fill="url(#bg)"/>
-  <rect width="1200" height="330" rx="22" fill="url(#glow)">
-    <animate attributeName="opacity" values=".62;.95;.62" dur="7s" repeatCount="indefinite"/>
-  </rect>
+  <rect width="1200" height="330" rx="22" fill="url(#glow)"/>
   <rect width="1200" height="330" rx="22" fill="url(#grid)"/>
   <rect x="48" y="48" width="6" height="234" rx="3" fill="#e50914"/>
   <text x="82" y="105" fill="#e8aaa0" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="4">VIVEK ANUPINDI  /  RESEARCH PROFILE</text>
-  <text x="80" y="177" fill="#f4ece7" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-1">Building intelligent systems</text>
-  <text x="80" y="235" fill="#ff7770" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="-1">for human health.</text>
-  <path d="M82 263H690" stroke="url(#rule)" stroke-width="3" stroke-linecap="round" stroke-dasharray="608" stroke-dashoffset="0">
-    <animate attributeName="stroke-dashoffset" from="608" to="0" dur="1.4s" fill="freeze"/>
-  </path>
-  <text x="82" y="300" fill="#c4b8b3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" letter-spacing="2">COMPUTER SCIENCE  ·  UMBC  ·  CLINICAL NLP  ·  HEALTHCARE AI</text>
+  <text x="80" y="177" fill="#f4ece7" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-1">Building thoughtful AI</text>
+  <text x="80" y="235" fill="#ff7770" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-1">for human health.</text>
+  <path d="M82 263H690" stroke="url(#rule)" stroke-width="3" stroke-linecap="round"/>
+  <text x="82" y="300" fill="#c4b8b3" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" letter-spacing="1.5">COMPUTER SCIENCE  ·  UMBC  ·  CLINICAL NLP  ·  HEALTHCARE AI</text>
   <g transform="translate(865 71)">
-    <rect width="285" height="190" rx="14" fill="#0d0c0d" fill-opacity=".72" stroke="#78403d" stroke-opacity=".85"/>
+    <rect width="285" height="190" rx="14" fill="#0d0c0d" fill-opacity=".78" stroke="#78403d" stroke-opacity=".85"/>
     <path d="M0 43H285" stroke="#ffffff" stroke-opacity=".10"/>
     <circle cx="22" cy="22" r="6" fill="#f46b8a"/>
     <circle cx="43" cy="22" r="6" fill="#e6b35e"/>
