@@ -41,9 +41,9 @@ I’m interested in practical questions at the intersection of AI, healthcare, a
 | **Predictive healthcare** | How can temporal and contextual signals be studied to understand patterns and support careful forecasting? |
 | **Data foundations** | What makes data pipelines traceable, well-integrated, and dependable enough for downstream analysis? |
 
-## Work in progress
+## Research & Work
 
-These are research and project directions I’m exploring—not claims of clinical deployment or validated medical tools.
+Selected research directions and project work. Research descriptions here are exploratory and do not imply clinical deployment or validated medical tools.
 
 ### Clinical text → structured codes
 Exploring multi-label ICD-10 classification from Spanish clinical narratives, including text preparation, label alignment, and comparisons between conventional machine-learning methods and multilingual transformer models.
@@ -51,8 +51,8 @@ Exploring multi-label ICD-10 classification from Spanish clinical narratives, in
 ### Health signals over time
 An exploratory glucose time-series project focused on temporal modeling and contextual signals in short-term prediction.
 
-### Reliable analytics workflows
-Data engineering work around ETL, integration, validation, and cloud-based analytics—building a dependable foundation for analysis and machine-learning workflows.
+### Data engineering for reliable analytics
+Building ETL workflows that bring together data from multiple sources, apply validation and quality checks, and prepare consistent datasets for cloud-based analytics and downstream machine learning. The focus is on traceable transformations and dependable data for research and reporting.
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/#research">
