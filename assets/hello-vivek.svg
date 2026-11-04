@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" role="img" aria-labelledby="title desc">
+  <title id="title">Hi, I'm Vivek</title>
+  <desc id="desc">A TypeScript-style greeting with an animated typing reveal and blinking cursor.</desc>
+  <defs>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#f2a65a"/>
+      <stop offset="1" stop-color="#e50914"/>
+    </linearGradient>
+    <clipPath id="typing">
+      <rect x="0" y="0" width="0" height="62">
+        <animate attributeName="width" from="0" to="790" dur="2.6s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <rect width="960" height="200" rx="18" fill="#171717"/>
+  <rect x="1" y="1" width="958" height="198" rx="17" fill="none" stroke="#3a3432" stroke-width="2"/>
+  <path d="M18 1h924" stroke="url(#edge)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="30" cy="29" r="6" fill="#e50914"/>
+  <circle cx="50" cy="29" r="6" fill="#f2a65a"/>
+  <circle cx="70" cy="29" r="6" fill="#635c59"/>
+  <text x="94" y="34" fill="#aaa19d" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">hello.ts</text>
+  <text x="28" y="111" fill="#77716e" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="17">1</text>
+  <text x="63" y="111" fill="#c792ea" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="25">const</text>
+  <text x="145" y="111" fill="#f2f2f2" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="25">greeting</text>
+  <text x="275" y="111" fill="#d6d0cc" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="25">:</text>
+  <text x="296" y="111" fill="#78c7e8" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="25">string</text>
+  <text x="389" y="111" fill="#d6d0cc" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="25">=</text>
+  <g clip-path="url(#typing)">
+    <text x="425" y="111" fill="#f2a65a" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="25">"Hi, I'm Vivek";</text>
+  </g>
+  <rect x="786" y="80" width="3" height="39" rx="1" fill="#e50914">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="63" y="155" fill="#aaa19d" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="16">// building thoughtful tools for health, data &amp; AI</text>
+</svg>
