@@ -7,7 +7,9 @@
   <img src="assets/profile-banner.svg" alt="Vivek Anupindi — Building intelligent systems for human health" width="100%">
 </div>
 
-<h2 align="center">Hi, I'm Vivek.</h2>
+<p align="center">
+  <img src="assets/hello-vivek.svg" alt="Hi, I'm Vivek — TypeScript-style animated greeting" width="100%">
+</p>
 
 <p align="center">
   Computer Science Ph.D. student at the <strong>University of Maryland, Baltimore County (UMBC)</strong>.
