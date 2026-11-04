@@ -37,11 +37,9 @@
 
 I’m interested in practical questions at the intersection of AI, healthcare, and data:
 
-| Area | Questions I explore |
-|---|---|
-| **Clinical language** | How can clinical narratives be represented and classified reliably, including across languages? |
-| **Predictive healthcare** | How can temporal and contextual signals be studied to understand patterns and support careful forecasting? |
-| **Data foundations** | What makes data pipelines traceable, well-integrated, and dependable enough for downstream analysis? |
+- **Clinical language:** How can clinical narratives be represented and classified reliably, including across languages?
+- **Predictive healthcare:** How can temporal and contextual signals be studied to understand patterns and support careful forecasting?
+- **Data foundations:** What makes data pipelines traceable, well-integrated, and dependable enough for downstream analysis?
 
 ## Research and work
 
@@ -66,9 +64,10 @@ Building ETL workflows that bring together data from multiple sources, apply val
 
 Rather than starting with a model, I like to work through the full path from question to evidence:
 
-| 01 · Frame | 02 · Prepare | 03 · Evaluate | 04 · Communicate |
-|---|---|---|---|
-| Define the question and intended use | Understand, integrate, and validate the data | Establish baselines and compare methods | Explain results, assumptions, and limitations |
+1. **Frame:** Define the question and intended use.
+2. **Prepare:** Understand, integrate, and validate the data.
+3. **Evaluate:** Establish baselines and compare methods.
+4. **Communicate:** Explain results, assumptions, and limitations.
 
 ## Background
 
