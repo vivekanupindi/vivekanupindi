@@ -29,9 +29,11 @@
   </a>
 </p>
 
+**On this page:** [Focus areas](#focus-areas) · [Research and work](#research-and-work) · [How I work](#how-i-work) · [Tools](#tools) · [Background](#background) · [Explore the portfolio](#explore-the-portfolio) · [GitHub snapshot](#github-snapshot)
+
 ---
 
-## The questions behind my work
+## Focus areas
 
 I’m interested in practical questions at the intersection of AI, healthcare, and data:
 
@@ -41,7 +43,7 @@ I’m interested in practical questions at the intersection of AI, healthcare, a
 | **Predictive healthcare** | How can temporal and contextual signals be studied to understand patterns and support careful forecasting? |
 | **Data foundations** | What makes data pipelines traceable, well-integrated, and dependable enough for downstream analysis? |
 
-## Research & Work
+## Research and work
 
 Selected research directions and project work. Research descriptions here are exploratory and do not imply clinical deployment or validated medical tools.
 
@@ -60,7 +62,7 @@ Building ETL workflows that bring together data from multiple sources, apply val
   </a>
 </p>
 
-## How I approach a problem
+## How I work
 
 Rather than starting with a model, I like to work through the full path from question to evidence:
 
@@ -68,13 +70,13 @@ Rather than starting with a model, I like to work through the full path from que
 |---|---|---|---|
 | Define the question and intended use | Understand, integrate, and validate the data | Establish baselines and compare methods | Explain results, assumptions, and limitations |
 
-## A little background
+## Background
 
 I’m pursuing a Ph.D. in Computer Science at UMBC. Before that, I completed an M.S. in Information Systems at Saint Louis University and a B.Tech in Computer Science at B. V. Raju Institute of Technology.
 
 From **August 2023 to May 2025**, I worked as a Graduate Global Student with **Saint Louis University Information Technology Services (SLU ITS)**. My project work included identity and access management (IAM) and iPass-related integrations, with Mike Martin as an advisor.
 
-## Tools I reach for
+## Tools
 
 <p>
   <strong>Programming & analysis</strong><br>
@@ -102,7 +104,9 @@ From **August 2023 to May 2025**, I worked as a Graduate Global Student with **S
   <img src="https://img.shields.io/badge/Terraform-2b2928?style=flat-square&logo=terraform&logoColor=e5b68b" alt="Terraform">
 </p>
 
-## Try the research console
+## Explore the portfolio
+
+### Research console
 
 The live portfolio includes a small command-driven console. GitHub profile READMEs are static Markdown, so the actual text input runs on the portfolio—not inside this page.
 
@@ -113,6 +117,9 @@ The live portfolio includes a small command-driven console. GitHub profile READM
 </p>
 
 A few commands to try once it opens:
+
+<details>
+<summary>Show available commands</summary>
 
 ```text
 help
@@ -127,10 +134,11 @@ open contact
 open fun-corner
 clear
 ```
+</details>
 
 The console accepts these predefined portfolio commands; it is not an operating-system shell.
 
-## Off the clock
+### Fun Corner
 
 Books, films, and stories are another way I stay curious. I keep a separate **Fun Corner** for reading lists and things I enjoy outside research.
 
