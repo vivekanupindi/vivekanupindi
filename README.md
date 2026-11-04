@@ -8,7 +8,7 @@
 </div>
 
 <p align="center">
-  <img src="assets/hello-vivek.svg" alt="Hi, I'm Vivek — TypeScript-style animated greeting" width="100%">
+  <img src="assets/hello-vivek.svg" alt="Hi, it's Vivek" width="100%">
 </p>
 
 <p align="center">
