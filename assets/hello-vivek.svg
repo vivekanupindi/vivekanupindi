@@ -1,11 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" role="img" aria-labelledby="title desc">
   <title id="title">Hi, it's Vivek</title>
-  <desc id="desc">A casual animated greeting.</desc>
+  <desc id="desc">The greeting appears in a casual font with a typewriter animation.</desc>
+  <defs>
+    <clipPath id="greeting-reveal" clipPathUnits="userSpaceOnUse">
+      <rect x="240" y="38" width="480" height="88">
+        <animate attributeName="width" from="0" to="480" dur="2.2s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
   <rect width="960" height="180" rx="18" fill="#171717"/>
   <rect x="1" y="1" width="958" height="178" rx="17" fill="none" stroke="#3a3432" stroke-width="2"/>
-  <text x="480" y="112" text-anchor="middle" fill="#f2a65a"
-        font-family="Segoe Print, Comic Sans MS, cursive" font-size="58" font-weight="600">
-    Hi, it's Vivek
-    <animateTransform attributeName="transform" type="translate" values="0 8;0 0" dur="700ms" fill="freeze"/>
-  </text>
+  <text x="240" y="108" fill="#f2a65a" clip-path="url(#greeting-reveal)"
+        font-family="Segoe Print, Comic Sans MS, cursive" font-size="58" font-weight="600">Hi, it's Vivek</text>
+  <rect x="239" y="61" width="3" height="58" rx="1.5" fill="#f2a65a">
+    <animate attributeName="x" from="239" to="720" dur="2.2s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="900ms" repeatCount="indefinite"/>
+  </rect>
 </svg>
