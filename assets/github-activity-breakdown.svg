@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="350"
  viewBox="0 0 960 350" role="img" aria-labelledby="title desc">
   <title id="title">Public GitHub contribution mix</title>
-  <desc id="desc">Public contribution categories will appear after the scheduled GitHub Actions refresh.</desc>
+  <desc id="desc">Code reviews: 0.0% (0 contributions); Issues: 1.3% (3 contributions); Pull requests: 13.6% (31 contributions); Commits: 85.1% (194 contributions). Trailing 365 days; refreshed 05 Nov 2026 · 17:15 UTC.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#211818"/><stop offset="1" stop-color="#111112"/>
@@ -10,19 +10,17 @@
   <rect width="960" height="350" rx="18" fill="url(#background)"/>
   <rect x=".5" y=".5" width="959" height="349" rx="17.5" fill="none" stroke="#573333"/>
   <text x="28" y="34" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="18" font-weight="700">Contribution activity</text>
-  <text x="28" y="55" fill="#b7a7a1" font-family="Arial,sans-serif" font-size="11">Public contribution mix · refreshed by GitHub Actions</text>
+  <text x="28" y="55" fill="#b7a7a1" font-family="Arial,sans-serif" font-size="11">Trailing 365 days · public contributions only · refreshed 05 Nov 2026 · 17:15 UTC</text>
   <g fill="none" stroke="#573333" stroke-width="1">
-    <polygon points="480,111.25 558.75,190 480,268.75 401.25,190"/>
-    <polygon points="480,137.5 532.5,190 480,242.5 427.5,190"/>
-    <polygon points="480,163.75 506.25,190 480,216.25 453.75,190"/>
+    <polygon points="480.0,111.25 558.75,190.0 480.0,268.75 401.25,190.0"/>
+    <polygon points="480.0,137.5 532.5,190.0 480.0,242.5 427.5,190.0"/>
+    <polygon points="480.0,163.75 506.25,190.0 480.0,216.25 453.75,190.0"/>
   </g>
   <g stroke="#e5b68b" stroke-opacity=".65" stroke-width="1">
-    <line x1="480" y1="85" x2="480" y2="295"/>
-    <line x1="375" y1="190" x2="585" y2="190"/>
+    <line x1="480.0" y1="85.0" x2="480.0" y2="295.0"/>
+    <line x1="375.0" y1="190.0" x2="585.0" y2="190.0"/>
   </g>
-  <text x="480" y="75" text-anchor="middle" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Code reviews</text>
-  <text x="610" y="194" text-anchor="start" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Issues</text>
-  <text x="480" y="322" text-anchor="middle" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Pull requests</text>
-  <text x="350" y="194" text-anchor="end" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Commits</text>
-  <text x="480" y="190" text-anchor="middle" fill="#b7a7a1" font-family="Arial,sans-serif" font-size="11">Live breakdown will appear after the next scheduled refresh.</text>
+  <polygon points="480.0,190.0 481.4,190.0 480.0,204.3 390.7,190.0" fill="#e50914" fill-opacity=".24" stroke="#ff7770" stroke-width="2"/>
+  <circle cx="480.0" cy="190.0" r="4" fill="#e5b68b" stroke="#f2e9e4" stroke-width="1.5"/><circle cx="481.4" cy="190.0" r="4" fill="#e5b68b" stroke="#f2e9e4" stroke-width="1.5"/><circle cx="480.0" cy="204.3" r="4" fill="#e5b68b" stroke="#f2e9e4" stroke-width="1.5"/><circle cx="390.7" cy="190.0" r="4" fill="#e5b68b" stroke="#f2e9e4" stroke-width="1.5"/>
+  <text x="480.0" y="73" text-anchor="middle" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Code reviews</text><text x="480.0" y="91" text-anchor="middle" fill="#e5b68b" font-family="Arial,sans-serif" font-size="11">0.0% · 0</text><text x="610.0" y="194.0" text-anchor="start" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Issues</text><text x="610.0" y="212.0" text-anchor="start" fill="#e5b68b" font-family="Arial,sans-serif" font-size="11">1.3% · 3</text><text x="480.0" y="321" text-anchor="middle" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Pull requests</text><text x="480.0" y="339" text-anchor="middle" fill="#e5b68b" font-family="Arial,sans-serif" font-size="11">13.6% · 31</text><text x="350.0" y="194.0" text-anchor="end" fill="#f2e9e4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Commits</text><text x="350.0" y="212.0" text-anchor="end" fill="#e5b68b" font-family="Arial,sans-serif" font-size="11">85.1% · 194</text>
 </svg>
