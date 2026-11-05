@@ -153,9 +153,6 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
   <img src="assets/github-profile-stats.svg" alt="Public GitHub contribution streak and programming language breakdown" width="100%">
 </p>
 
-<p align="center">
-  <img src="assets/github-activity-breakdown.svg" alt="Public GitHub contribution mix across commits, issues, pull requests, and code reviews over the last 365 days" width="100%">
-</p>
 
 
 
