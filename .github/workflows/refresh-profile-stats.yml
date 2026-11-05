@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate language and streak card from GitHub data
+      - name: Generate language, streak, and activity cards from GitHub data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: vivekanupindi
@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/github-profile-stats.svg
+          git add assets/github-profile-stats.svg assets/github-activity-breakdown.svg
           if git diff --cached --quiet; then
             echo "Profile stats are unchanged."
             exit 0
