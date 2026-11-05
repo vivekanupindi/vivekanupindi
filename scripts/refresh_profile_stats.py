@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate public language, streak, and contribution-mix cards."""
+"""Generate a compact language and public contribution-streak card."""
 
 from __future__ import annotations
 
@@ -16,7 +16,6 @@ USERNAME = os.environ.get("GITHUB_USERNAME", "vivekanupindi")
 TOKEN = os.environ["GITHUB_TOKEN"]
 API_ROOT = "https://api.github.com"
 OUTPUT = Path("assets/github-profile-stats.svg")
-ACTIVITY_OUTPUT = Path("assets/github-activity-breakdown.svg")
 
 INK = "#f2e9e4"
 MUTED = "#b7a7a1"
@@ -86,17 +85,13 @@ def fetch_language_totals(repositories: list[dict]) -> dict[str, int]:
     return dict(sorted(totals.items(), key=lambda item: item[1], reverse=True))
 
 
-def fetch_public_contribution_data(now: datetime) -> tuple[dict[date, int], dict[str, int]]:
+def fetch_public_contribution_days(now: datetime) -> dict[date, int]:
     # GitHub limits contributionsCollection queries to a one-year period.
     start = now - timedelta(days=365)
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
         contributionsCollection(from: $from, to: $to) {
-          totalCommitContributions
-          totalIssueContributions
-          totalPullRequestContributions
-          totalPullRequestReviewContributions
           contributionCalendar {
             weeks {
               contributionDays {
@@ -124,16 +119,9 @@ def fetch_public_contribution_data(now: datetime) -> tuple[dict[date, int], dict
         message = "; ".join(error.get("message", "unknown error") for error in result["errors"])
         raise RuntimeError(f"GitHub GraphQL error: {message}")
     try:
-        collection = result["data"]["user"]["contributionsCollection"]
-        weeks = collection["contributionCalendar"]["weeks"]
-        activity = {
-            "commits": int(collection["totalCommitContributions"]),
-            "issues": int(collection["totalIssueContributions"]),
-            "pull_requests": int(collection["totalPullRequestContributions"]),
-            "code_reviews": int(collection["totalPullRequestReviewContributions"]),
-        }
-    except (KeyError, TypeError, ValueError):
-        raise RuntimeError("GitHub returned an incomplete contribution collection.") from None
+        weeks = result["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+    except (KeyError, TypeError):
+        raise RuntimeError("GitHub returned an incomplete contribution calendar.") from None
 
     counts = {}
     for week in weeks:
@@ -141,7 +129,7 @@ def fetch_public_contribution_data(now: datetime) -> tuple[dict[date, int], dict
             counts[date.fromisoformat(day["date"])] = int(day["contributionCount"])
     if not counts:
         raise RuntimeError("GitHub returned no contribution calendar days.")
-    return counts, activity
+    return counts
 
 
 def current_streak(counts: dict[date, int], today: date) -> str:
@@ -217,103 +205,18 @@ def build_svg(languages: dict[str, int], streak: str, refreshed: str) -> str:
 </svg>'''
 
 
-def build_activity_svg(activity: dict[str, int], refreshed: str) -> str:
-    categories = [
-        ("code_reviews", "Code reviews"),
-        ("issues", "Issues"),
-        ("pull_requests", "Pull requests"),
-        ("commits", "Commits"),
-    ]
-    total = sum(max(0, activity[key]) for key, _ in categories)
-    values = {
-        key: (max(0, activity[key]) / total * 100 if total else 0.0)
-        for key, _ in categories
-    }
-    counts = {key: max(0, activity[key]) for key, _ in categories}
-    cx, cy, radius = 480.0, 190.0, 105.0
-    coords = {
-        "code_reviews": (cx, cy - radius * values["code_reviews"] / 100),
-        "issues": (cx + radius * values["issues"] / 100, cy),
-        "pull_requests": (cx, cy + radius * values["pull_requests"] / 100),
-        "commits": (cx - radius * values["commits"] / 100, cy),
-    }
-    polygon = ""
-    markers = ""
-    if total:
-        points = " ".join(f"{coords[key][0]:.1f},{coords[key][1]:.1f}" for key, _ in categories)
-        polygon = f'<polygon points="{points}" fill="{RED}" fill-opacity=".24" stroke="#ff7770" stroke-width="2"/>'
-        markers = "".join(
-            f'<circle cx="{coords[key][0]:.1f}" cy="{coords[key][1]:.1f}" r="4" fill="{AMBER}" stroke="{INK}" stroke-width="1.5"/>'
-            for key, _ in categories
-        )
-
-    label_specs = {
-        "code_reviews": (cx, 73, "middle"),
-        "issues": (cx + radius + 25, cy + 4, "start"),
-        "pull_requests": (cx, 321, "middle"),
-        "commits": (cx - radius - 25, cy + 4, "end"),
-    }
-    labels = []
-    for key, name in categories:
-        x, y, anchor = label_specs[key]
-        percent = f"{values[key]:.1f}%"
-        count = f"{counts[key]:,}"
-        labels.append(
-            f'<text x="{x}" y="{y}" text-anchor="{anchor}" fill="{INK}" '
-            f'font-family="Arial,sans-serif" font-size="13" font-weight="700">{name}</text>'
-            f'<text x="{x}" y="{y + 18}" text-anchor="{anchor}" fill="{AMBER}" '
-            f'font-family="Arial,sans-serif" font-size="11">{percent} · {count}</text>'
-        )
-    safe_refreshed = html.escape(refreshed)
-    description = "; ".join(
-        f"{name}: {values[key]:.1f}% ({counts[key]} contributions)"
-        for key, name in categories
-    )
-    if not total:
-        description = "No public contributions recorded in the last 365 days."
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="350"
- viewBox="0 0 960 350" role="img" aria-labelledby="title desc">
-  <title id="title">Public GitHub contribution mix</title>
-  <desc id="desc">{html.escape(description)}. Trailing 365 days; refreshed {safe_refreshed}.</desc>
-  <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#211818"/><stop offset="1" stop-color="#111112"/>
-    </linearGradient>
-  </defs>
-  <rect width="960" height="350" rx="18" fill="url(#background)"/>
-  <rect x=".5" y=".5" width="959" height="349" rx="17.5" fill="none" stroke="{LINE}"/>
-  <text x="28" y="34" fill="{INK}" font-family="Arial,sans-serif" font-size="18" font-weight="700">Contribution activity</text>
-  <text x="28" y="55" fill="{MUTED}" font-family="Arial,sans-serif" font-size="11">Trailing 365 days · public contributions only · refreshed {safe_refreshed}</text>
-  <g fill="none" stroke="{LINE}" stroke-width="1">
-    <polygon points="{cx},{cy-radius*.75} {cx+radius*.75},{cy} {cx},{cy+radius*.75} {cx-radius*.75},{cy}"/>
-    <polygon points="{cx},{cy-radius*.5} {cx+radius*.5},{cy} {cx},{cy+radius*.5} {cx-radius*.5},{cy}"/>
-    <polygon points="{cx},{cy-radius*.25} {cx+radius*.25},{cy} {cx},{cy+radius*.25} {cx-radius*.25},{cy}"/>
-  </g>
-  <g stroke="{AMBER}" stroke-opacity=".65" stroke-width="1">
-    <line x1="{cx}" y1="{cy-radius}" x2="{cx}" y2="{cy+radius}"/>
-    <line x1="{cx-radius}" y1="{cy}" x2="{cx+radius}" y2="{cy}"/>
-  </g>
-  {polygon}
-  {markers}
-  {''.join(labels)}
-</svg>'''
-
-
 def main() -> None:
     now = datetime.now(timezone.utc)
     repositories = fetch_public_repositories()
     languages = fetch_language_totals(repositories)
-    contribution_days, activity = fetch_public_contribution_data(now)
+    contribution_days = fetch_public_contribution_days(now)
     streak = current_streak(contribution_days, now.date())
     refreshed = now.strftime("%d %b %Y · %H:%M UTC")
 
-    # All API calls finish before either card is written, preserving prior files on failure.
-    stats_svg = build_svg(languages, streak, refreshed)
-    activity_svg = build_activity_svg(activity, refreshed)
+    # All API calls finish before the card is written, preserving the previous file on failure.
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(stats_svg, encoding="utf-8")
-    ACTIVITY_OUTPUT.write_text(activity_svg, encoding="utf-8")
-    print(f"Updated public profile cards: {len(languages)} languages, {streak} day streak, {sum(activity.values())} categorized contributions.")
+    OUTPUT.write_text(build_svg(languages, streak, refreshed), encoding="utf-8")
+    print(f"Updated profile card: {len(languages)} public languages, {streak} day streak.")
 
 
 if __name__ == "__main__":
