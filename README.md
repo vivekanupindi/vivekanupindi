@@ -29,6 +29,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=vivekanupindi&label=PROFILE+VIEWS&color=e50914&style=for-the-badge" alt="GitHub profile views counter">
+</p>
+
 **On this page:** [Focus areas](#focus-areas) · [Research and work](#research-and-work) · [How I work](#how-i-work) · [Tools](#tools) · [Background](#background) · [Explore the portfolio](#explore-the-portfolio) · [GitHub snapshot](#github-snapshot)
 
 ---
