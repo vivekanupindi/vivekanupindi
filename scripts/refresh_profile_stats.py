@@ -14,6 +14,7 @@ from urllib.request import Request, urlopen
 
 USERNAME = os.environ.get("GITHUB_USERNAME", "vivekanupindi")
 TOKEN = os.environ["GITHUB_TOKEN"]
+PRIVATE_CONTRIBUTIONS_TOKEN = os.environ.get("PRIVATE_CONTRIBUTIONS_TOKEN", "").strip()
 API_ROOT = "https://api.github.com"
 OUTPUT = Path("assets/github-profile-stats.svg")
 
@@ -26,12 +27,12 @@ TRACK = "#3a2a2a"
 LANGUAGE_COLORS = [RED, AMBER, "#d78273", "#c7a18a", "#9d6a60", "#79534e"]
 
 
-def request_json(url: str, payload: dict | None = None):
+def request_json(url: str, payload: dict | None = None, *, token: str = TOKEN):
     headers = {
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
         "User-Agent": "vivekanupindi-profile-stats",
-        "Authorization": f"Bearer {TOKEN}",
+        "Authorization": f"Bearer {token}",
     }
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
     if data is not None:
@@ -85,7 +86,9 @@ def fetch_language_totals(repositories: list[dict]) -> dict[str, int]:
     return dict(sorted(totals.items(), key=lambda item: item[1], reverse=True))
 
 
-def fetch_public_contribution_days(now: datetime) -> dict[date, int]:
+def fetch_contribution_days(now: datetime) -> dict[date, int]:
+    # Private contribution counts require a token with the read:user scope and
+    # the account-level "Include private contributions on my profile" setting.
     # GitHub limits contributionsCollection queries to a one-year period.
     start = now - timedelta(days=365)
     query = """
@@ -114,6 +117,7 @@ def fetch_public_contribution_days(now: datetime) -> dict[date, int]:
                 "to": now.isoformat().replace("+00:00", "Z"),
             },
         },
+        token=PRIVATE_CONTRIBUTIONS_TOKEN,
     )
     if result.get("errors"):
         message = "; ".join(error.get("message", "unknown error") for error in result["errors"])
@@ -175,7 +179,7 @@ def build_svg(languages: dict[str, int], streak: str, refreshed: str) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300"
  viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
   <title id="title">Vivek Anupindi — GitHub languages and streak</title>
-  <desc id="desc">Current public contribution streak: {html.escape(streak)} days. Top public repository languages by code bytes. Refreshed {safe_refreshed}.</desc>
+  <desc id="desc">Current contribution streak (public + private): {html.escape(streak)} days. Top public repository languages by code bytes. Refreshed {safe_refreshed}.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#211818"/><stop offset="1" stop-color="#111112"/>
@@ -189,34 +193,40 @@ def build_svg(languages: dict[str, int], streak: str, refreshed: str) -> str:
   <rect width="960" height="300" rx="18" fill="url(#glow)"/>
   <rect x=".5" y=".5" width="959" height="299" rx="17.5" fill="none" stroke="{LINE}"/>
   <text x="28" y="40" fill="{INK}" font-family="Arial,sans-serif" font-size="19" font-weight="700">GitHub snapshot</text>
-  <text x="28" y="62" fill="{MUTED}" font-family="Arial,sans-serif" font-size="11">Public data · refreshed {safe_refreshed}</text>
+  <text x="28" y="62" fill="{MUTED}" font-family="Arial,sans-serif" font-size="11">Contribution streak: public + private · Languages: public repos · refreshed {safe_refreshed}</text>
   <g transform="translate(28 88)">
     <rect width="330" height="166" rx="13" fill="#251c1c" stroke="{LINE}"/>
     <rect x="18" y="20" width="4" height="23" rx="2" fill="{RED}"/>
     <text x="32" y="36" fill="{AMBER}" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">CURRENT STREAK</text>
     <text x="20" y="101" fill="{INK}" font-family="Arial,sans-serif" font-size="46" font-weight="700">{html.escape(streak)}</text>
     <text x="20" y="124" fill="{MUTED}" font-family="Arial,sans-serif" font-size="12">consecutive days</text>
-    <text x="20" y="147" fill="{MUTED}" font-family="Arial,sans-serif" font-size="10">Public activity · UTC days</text>
+    <text x="20" y="147" fill="{MUTED}" font-family="Arial,sans-serif" font-size="10">Public + private activity · UTC days</text>
   </g>
   <text x="390" y="101" fill="{AMBER}" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">LANGUAGES BY CODE SIZE</text>
   {''.join(language_rows)}
-  <text x="28" y="280" fill="{MUTED}" font-family="Arial,sans-serif" font-size="10">Streak ends today or yesterday; only publicly visible activity is counted.</text>
+  <text x="28" y="280" fill="{MUTED}" font-family="Arial,sans-serif" font-size="10">Streak ends today or yesterday; public + private contribution counts are included.</text>
   <text x="932" y="280" text-anchor="end" fill="{MUTED}" font-family="Arial,sans-serif" font-size="10">Top six languages · public, non-fork repos</text>
 </svg>'''
 
 
 def main() -> None:
+    if not PRIVATE_CONTRIBUTIONS_TOKEN:
+        raise RuntimeError(
+            "Set the PROFILE_STATS_TOKEN repository secret to a personal access token with read:user scope. "
+            "Also enable 'Include private contributions on my profile' in GitHub profile settings."
+        )
+
     now = datetime.now(timezone.utc)
     repositories = fetch_public_repositories()
     languages = fetch_language_totals(repositories)
-    contribution_days = fetch_public_contribution_days(now)
+    contribution_days = fetch_contribution_days(now)
     streak = current_streak(contribution_days, now.date())
     refreshed = now.strftime("%d %b %Y · %H:%M UTC")
 
     # All API calls finish before the card is written, preserving the previous file on failure.
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(build_svg(languages, streak, refreshed), encoding="utf-8")
-    print(f"Updated profile card: {len(languages)} public languages, {streak} day streak.")
+    print(f"Updated profile card: {len(languages)} public languages, {streak} day public + private contribution streak.")
 
 
 if __name__ == "__main__":
