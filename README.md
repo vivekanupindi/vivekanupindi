@@ -155,6 +155,7 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 
 <p align="center">
   <img src="assets/github-profile-stats.svg" alt="GitHub contribution streak including public and private activity, with a programming language breakdown from public repositories" width="100%">
+<p align="center"><sub>Contribution streak includes public and private activity; language breakdown remains based on public, non-fork repositories.</sub></p>
 </p>
 
 
