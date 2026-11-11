@@ -154,7 +154,7 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 ## GitHub snapshot
 
 <p align="center">
-  <img src="assets/github-profile-stats.svg" alt="Public GitHub contribution streak and programming language breakdown" width="100%">
+  <img src="assets/github-profile-stats.svg" alt="GitHub contribution streak including public and private activity, with a programming language breakdown from public repositories" width="100%">
 </p>
 
 
