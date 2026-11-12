@@ -8,11 +8,11 @@
       </rect>
     </clipPath>
   </defs>
-  <rect width="960" height="180" rx="18" fill="#171717"/>
-  <rect x="1" y="1" width="958" height="178" rx="17" fill="none" stroke="#3a3432" stroke-width="2"/>
-  <text x="240" y="108" fill="#f2a65a" clip-path="url(#greeting-reveal)"
+  <rect width="960" height="180" rx="18" fill="#090f0b"/>
+  <rect x="1" y="1" width="958" height="178" rx="17" fill="none" stroke="#456b4c" stroke-width="2"/>
+  <text x="240" y="108" fill="#abd301" clip-path="url(#greeting-reveal)"
         font-family="Segoe Print, Comic Sans MS, cursive" font-size="58" font-weight="600">Hi, it's Vivek</text>
-  <rect x="239" y="61" width="3" height="58" rx="1.5" fill="#f2a65a">
+  <rect x="239" y="61" width="3" height="58" rx="1.5" fill="#abd301">
     <animate attributeName="x" from="239" to="720" dur="2.2s" fill="freeze"/>
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.5;1" dur="900ms" repeatCount="indefinite"/>
   </rect>
