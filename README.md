@@ -19,10 +19,10 @@
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/">
-    <img src="https://img.shields.io/badge/Portfolio-Explore-e50914?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio">
+    <img src="https://img.shields.io/badge/Portfolio-Explore-abd301?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio">
   </a>
   <a href="mailto:vivekanupindi@umbc.edu">
-    <img src="https://img.shields.io/badge/Email-Say%20hello-7d292b?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Email-Say%20hello-526b1c?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
   <a href="https://www.linkedin.com/in/vivek-anupindi-6214831a0/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-333333?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=vivekanupindi&label=PROFILE+VIEWS&color=e50914&style=for-the-badge" alt="GitHub profile views counter">
+  <img src="https://komarev.com/ghpvc/?username=vivekanupindi&label=PROFILE+VIEWS&color=abd301&style=for-the-badge" alt="GitHub profile views counter">
 </p>
 
 **On this page:** [Focus areas](#focus-areas) · [Research and work](#research-and-work) · [How I work](#how-i-work) · [Tools](#tools) · [Background](#background) · [Explore the portfolio](#explore-the-portfolio) · [GitHub snapshot](#github-snapshot)
@@ -60,7 +60,7 @@ Building ETL workflows that bring together data from multiple sources, apply val
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/#research">
-    <img src="https://img.shields.io/badge/See%20research%20on%20my%20portfolio-e50914?style=for-the-badge&logo=googlechrome&logoColor=white" alt="See research on my portfolio">
+    <img src="https://img.shields.io/badge/See%20research%20on%20my%20portfolio-abd301?style=for-the-badge&logo=googlechrome&logoColor=white" alt="See research on my portfolio">
   </a>
 </p>
 
@@ -115,7 +115,7 @@ The live portfolio includes a small command-driven console. GitHub profile READM
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/#research-console">
-    <img src="https://img.shields.io/badge/OPEN%20LIVE%20CONSOLE-e50914?style=for-the-badge&logo=windowsterminal&logoColor=white" alt="Open live research console">
+    <img src="https://img.shields.io/badge/OPEN%20LIVE%20CONSOLE-abd301?style=for-the-badge&logo=windowsterminal&logoColor=white" alt="Open live research console">
   </a>
 </p>
 
@@ -147,7 +147,7 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/blog.html">
-    <img src="https://img.shields.io/badge/Visit%20Fun%20Corner-Books%20%26%20Films-e50914?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Visit Fun Corner">
+    <img src="https://img.shields.io/badge/Visit%20Fun%20Corner-Books%20%26%20Films-abd301?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Visit Fun Corner">
   </a>
 </p>
 
