@@ -4,7 +4,7 @@
 -->
 
 <div align="center">
-  <img src="assets/profile-banner.svg" alt="Vivek Anupindi — Building intelligent systems for human health" width="100%">
+  <img src="assets/profile-banner-green.svg" alt="Vivek Anupindi — Building intelligent systems for human health" width="100%">
 </div>
 
 <p align="center">
