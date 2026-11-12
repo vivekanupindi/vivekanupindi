@@ -7,6 +7,7 @@ import html
 import json
 import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -137,7 +138,7 @@ def build_svg(languages: dict[str, int], refreshed: str) -> str:
 
 
 def main() -> None:
-    now_text = __import__("datetime").datetime.now(__import__("datetime").timezone.utc).strftime(
+    now_text = datetime.now(timezone.utc).strftime(
         "%d %b %Y · %H:%M UTC"
     )
     repositories = fetch_public_repositories()
