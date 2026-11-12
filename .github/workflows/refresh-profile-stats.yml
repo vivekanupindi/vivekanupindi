@@ -31,10 +31,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate language and contribution streak card from GitHub data
+      - name: Generate public repository language card from GitHub data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PRIVATE_CONTRIBUTIONS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
           GITHUB_USERNAME: vivekanupindi
         run: python scripts/refresh_profile_stats.py
 
