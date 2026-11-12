@@ -154,10 +154,15 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 ## GitHub snapshot
 
 <p align="center">
-  <img src="assets/github-profile-stats.svg" alt="Programming language breakdown from public repositories" width="100%">
+  <a href="https://github.com/stats-organization/github-stats-extended">
+    <img src="https://github-stats-extended.vercel.app/api?username=vivekanupindi&show_icons=true&theme=chartreuse-dark&custom_title=Vivek%27s%20GitHub%20Stats&card_width=600" width="600" alt="Vivek's GitHub stats, including stars, current-year commits, pull requests, issues, contributions, and overall rank">
+  </a>
+  &nbsp;
+  <a href="https://github.com/stats-organization/github-stats-extended">
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=vivekanupindi&theme=chartreuse-dark&langs_count=6&card_width=380" width="380" alt="Most used programming languages across Vivek's public repositories">
+  </a>
 </p>
-<p align="center"><sub>Language breakdown is based on code size across public, non-fork repositories.</sub></p>
-
+<p align="center"><sub>Stats and rank are calculated from publicly available GitHub activity. Language percentages represent code usage in public, non-fork repositories.</sub></p>
 
 
 
