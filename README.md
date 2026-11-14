@@ -19,10 +19,10 @@
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/">
-    <img src="https://img.shields.io/badge/Portfolio-Explore-abd301?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio">
+    <img src="https://img.shields.io/badge/Portfolio-Explore-405a12?style=for-the-badge&logo=googlechrome&logoColor=b5e853" alt="Portfolio">
   </a>
   <a href="mailto:vivekanupindi@umbc.edu">
-    <img src="https://img.shields.io/badge/Email-Say%20hello-526b1c?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Email-Say%20hello-405a12?style=for-the-badge&logo=gmail&logoColor=b5e853" alt="Email">
   </a>
   <a href="https://www.linkedin.com/in/vivek-anupindi-6214831a0/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-333333?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=vivekanupindi&label=PROFILE+VIEWS&color=abd301&style=for-the-badge" alt="GitHub profile views counter">
+  <img src="https://komarev.com/ghpvc/?username=vivekanupindi&label=PROFILE+VIEWS&color=405a12&style=for-the-badge" alt="GitHub profile views counter">
 </p>
 
 **On this page:** [Focus areas](#focus-areas) · [Research and work](#research-and-work) · [How I work](#how-i-work) · [Tools](#tools) · [Background](#background) · [Explore the portfolio](#explore-the-portfolio) · [GitHub snapshot](#github-snapshot)
@@ -60,7 +60,7 @@ Building ETL workflows that bring together data from multiple sources, apply val
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/#research">
-    <img src="https://img.shields.io/badge/See%20research%20on%20my%20portfolio-abd301?style=for-the-badge&logo=googlechrome&logoColor=white" alt="See research on my portfolio">
+    <img src="https://img.shields.io/badge/See%20research%20on%20my%20portfolio-405a12?style=for-the-badge&logo=googlechrome&logoColor=b5e853" alt="See research on my portfolio">
   </a>
 </p>
 
@@ -115,7 +115,7 @@ The live portfolio includes a small command-driven console. GitHub profile READM
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/#research-console">
-    <img src="https://img.shields.io/badge/OPEN%20LIVE%20CONSOLE-abd301?style=for-the-badge&logo=windowsterminal&logoColor=white" alt="Open live research console">
+    <img src="https://img.shields.io/badge/OPEN%20LIVE%20CONSOLE-405a12?style=for-the-badge&logo=windowsterminal&logoColor=b5e853" alt="Open live research console">
   </a>
 </p>
 
@@ -147,7 +147,7 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 
 <p align="center">
   <a href="https://vivekanupindi.github.io/blog.html">
-    <img src="https://img.shields.io/badge/Visit%20Fun%20Corner-Books%20%26%20Films-abd301?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Visit Fun Corner">
+    <img src="https://img.shields.io/badge/Visit%20Fun%20Corner-Books%20%26%20Films-405a12?style=for-the-badge&logo=readthedocs&logoColor=b5e853" alt="Visit Fun Corner">
   </a>
 </p>
 
@@ -155,11 +155,11 @@ Books, films, and stories are another way I stay curious. I keep a separate **Fu
 
 <p align="center">
   <a href="https://github.com/stats-organization/github-stats-extended">
-    <img src="https://github-stats-extended.vercel.app/api?username=vivekanupindi&show_icons=true&theme=chartreuse-dark&custom_title=Vivek%27s%20GitHub%20Stats&card_width=600" width="600" alt="Vivek's GitHub stats, including stars, current-year commits, pull requests, issues, contributions, and overall rank">
+    <img src="https://github-stats-extended.vercel.app/api?username=vivekanupindi&show_icons=true&theme=chartreuse-dark&title_color=b5e853&text_color=eaf2e6&icon_color=abd301&bg_color=0d150e&border_color=5d7f25&custom_title=Vivek%27s%20GitHub%20Stats&card_width=600" width="600" alt="Vivek's GitHub stats, including stars, current-year commits, pull requests, issues, contributions, and overall rank">
   </a>
   &nbsp;
   <a href="https://github.com/stats-organization/github-stats-extended">
-    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=vivekanupindi&theme=chartreuse-dark&langs_count=6&card_width=380" width="380" alt="Most used programming languages across Vivek's public repositories">
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=vivekanupindi&theme=chartreuse-dark&title_color=b5e853&text_color=eaf2e6&icon_color=abd301&bg_color=0d150e&border_color=5d7f25&langs_count=6&card_width=380" width="380" alt="Most used programming languages across Vivek's public repositories">
   </a>
 </p>
 <p align="center"><sub>Stats and rank are calculated from publicly available GitHub activity. Language percentages represent code usage in public, non-fork repositories.</sub></p>
