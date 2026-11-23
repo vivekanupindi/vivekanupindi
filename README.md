@@ -4,7 +4,7 @@
 -->
 
 <div align="center">
-  <img src="assets/profile-banner-green.svg" alt="Vivek Anupindi — Building systems with data-driven insights and intelligence" width="100%">
+  <img src="assets/profile-banner-data-driven.svg" alt="Vivek Anupindi — Building systems with data-driven insights and intelligence" width="100%">
 </div>
 
 <p align="center">
